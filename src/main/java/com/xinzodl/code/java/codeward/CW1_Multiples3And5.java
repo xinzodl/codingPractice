@@ -8,6 +8,8 @@ public class CW1_Multiples3And5 {
         IntStream filteredIntStream = intStream.filter( x -> x % 3 == 0 || x % 5 == 0);
         int result = filteredIntStream.reduce(Integer::sum).orElse(-1);
         return result;
+
+        
     }
 
 }
